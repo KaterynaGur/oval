@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Oval</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230412152255">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html" class="header__logo"><img src="img/header/logo.svg" alt="Logo"></a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="jobs.html" class="menu__link">For Job Seekers</a></li>
+							<li class="menu__item"><a href="emp.html" class="menu__link">For Employers</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions">
+					<button type="button" data-da=".menu__body, 498" class="header__button button button__transparent">Sign In</button>
+					<button type="button" data-da=".menu__body, 398" class="header__button button button__white">Post a Job</button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__main main">
+				<div class="main__container">
+					<div class="main__content">
+						<div class="main__find find-main">
+							<div class="find-main__part">
+								<div class="find-main__description">
+									<h1 class="find-main__title title">Find the Job <br> that Fits Your Life</h1>
+									<div class="find-main__subtitle">
+										Millions of people are searching for jobs, salary information, company reviews, and interview questions. See what others are looking for on Oval today.
+									</div>
+								</div>
+								<div class="find-main__photo">
+									<picture class="logotip">
+										<source media="(max-width: 320px)" srcset="img/main/header-image-3.jpg">
+										<source media="(max-width: 1149.98px)" srcset="img/main/header-image-4.jpg">
+										<img src="img/main/header-image.jpg" alt="Main photo" />
+									</picture>
+								</div>
+							</div>
+							<div data-tabs class="find-main__tabs tabs">
+								<nav data-tabs-titles class="tabs__navigation">
+									<button type="button" class="tabs__title _tab-active">Jobs</button>
+									<button type="button" class="tabs__title">Employers</button>
+								</nav>
+								<div data-tabs-body class="tabs__content">
+									<div class="tabs__body">
+										<form action="" method="get" class="tabs__form form">
+											<div class="form__label">
+												<div class="form__icon">
+													<img src="img/icons/search.svg" alt="">
+												</div>
+												<input class="form__input form__input_1" name="s" placeholder="Job tittle or keyword" type="search">
+											</div>
+											<div class="form__label">
+												<div class="form__icon">
+													<img src="img/icons/shape.svg" alt="">
+												</div>
+												<input class="form__input form__input_2" name="s" placeholder="City, state or zip" type="search">
+											</div>
+											<button type="submit" class="form__button button button__orange">Find Job</button>
+										</form>
+									</div>
+									<div class="tabs__body">
+										<form action="" method="get" class="tabs__form form">
+											<div class="form__label">
+												<div class="form__icon">
+													<img src="img/icons/search.svg" alt="">
+												</div>
+												<input class="form__input form__input_1" name="s" placeholder="Job tittle or keyword" type="search">
+											</div>
+											<div class="form__label">
+												<div class="form__icon">
+													<img src="img/icons/shape.svg" alt="">
+												</div>
+												<input class="form__input form__input_2" name="s" placeholder="City, state or zip" type="search">
+											</div>
+											<button type="submit" class="form__button button button__orange">Find Job</button>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="find-main__bg"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__trending trending">
+				<div class="trending__container">
+					<div class="trending__content">
+						<div class="trending__search">
+							<div class="trending__title">Trending Searches</div>
+							<a class="trending__link" href="#">View more jobs</a>
+						</div>
+						<div class="trending__tags" id="myBtnContainer">
+							<button class="trending__btn btn" onclick="filterSelection('home')">work from home</button>
+							<button class="trending__btn btn" onclick="filterSelection('experience')">no experience</button>
+							<button class="trending__btn btn" onclick="filterSelection('remote')">remote work</button>
+							<button class="trending__btn btn" onclick="filterSelection('heatlhcare')">heatlhcare job</button>
+							<button class="trending__btn btn" onclick="filterSelection('online')">online job</button>
+							<button class="trending__btn btn" onclick="filterSelection('no-life')">no life</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__how how">
+				<div class="how__container">
+					<div class="how__content">
+						<div class="how__label">How Oval Works for You</div>
+						<div class="how__items">
+							<ol class="how__list">
+								<li>Create Oval profile</li>
+								<li>Find job you love</li>
+								<li>Get hired</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__daily daily">
+				<div class="daily__container">
+					<div class="daily__content">
+						<div class="daily__description description-daily">
+							<h2 class="description-daily__title title_medium">New jobs daily you might love</h2>
+							<div class="description-daily__form">
+								<form action="" class="form-select">
+									<div class="form-select__label">Jobs category:</div>
+									<select class="form-select__select" name="form[]" data-class-modif="form">
+										<option value="1" selected>Internet & Technology</option>
+										<option value="2">Marketing</option>
+										<option value="3">Tourism</option>
+										<option value="4">Building</option>
+									</select>
+								</form>
+							</div>
+						</div>
+						<div class="daily__body body-daily">
+							<div class="body-daily__item card-jobs">
+								<div class="card-jobs__info info-card-jobs">
+									<a href="profile-company.html" class="info-card-jobs__logo">
+										<img src="img/logo/adobe.svg" alt="Adobe">
+									</a>
+									<a href="profile-company.html" class="info-card-jobs__company">Adobe</a>
+									<div class="info-card-jobs__days">3 days ago</div>
+								</div>
+								<a href="vacancy.html" class="card-jobs__vacancy">Sales Engineer, Application Modernization, Healthcare, Google Cloud</a>
+								<div class="card-jobs__conditions conditions-card">
+									<div class="conditions-card__item conditions-card__item_city">San Jose, CA</div>
+									<div class="conditions-card__item conditions-card__item_time">Fulltime</div>
+								</div>
+							</div>
+							<div class="body-daily__item card-jobs">
+								<div class="card-jobs__info info-card-jobs">
+									<a href="#" class="info-card-jobs__logo">
+										<img src="img/logo/mercedes.svg" alt="Mercedes">
+									</a>
+									<a href="#" class="info-card-jobs__company">Mercedes-Benz</a>
+									<div class="info-card-jobs__days">3 days ago</div>
+								</div>
+								<a href="#" class="card-jobs__vacancy">Head of Third Party Strategy and Deals, Go-to-Market</a>
+								<div class="card-jobs__conditions conditions-card">
+									<div class="conditions-card__item conditions-card__item_city">Aurora, CO</div>
+									<div class="conditions-card__item conditions-card__item_time">Fulltime</div>
+								</div>
+							</div>
+							<div class="body-daily__item card-jobs">
+								<div class="card-jobs__info info-card-jobs">
+									<a href="#" class="info-card-jobs__logo">
+										<img src="img/logo/dropbox.svg" alt="Dropbox">
+									</a>
+									<a href="#" class="info-card-jobs__company">Dropbox</a>
+									<div class="info-card-jobs__days">3 days ago</div>
+								</div>
+								<a href="#" class="card-jobs__vacancy">Marketing Associate Director - Consumer Experience</a>
+								<div class="card-jobs__conditions conditions-card">
+									<div class="conditions-card__item conditions-card__item_city">Lowell, MA</div>
+									<div class="conditions-card__item conditions-card__item_time">Fulltime</div>
+								</div>
+							</div>
+							<div class="body-daily__item item-daily card-employer">
+								<div class="card-employer__info info-card-employer">
+									<a href="#" class="info-card-employer__logo">
+										<img src="img/logo/spotify.svg" alt="Spotify">
+									</a>
+									<a href="#" class="info-card-employer__name">Spotify</a>
+									<div class="info-card-employer__stars">
+										<div class="rating">
+											<div class="rating__value">4.8</div>
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-employer__conditions conditions-card">
+									<div class="conditions-card__item conditions-card__item_city">Stockholm, Sweden</div>
+									<div class="conditions-card__item conditions-card__item_internet">Internet</div>
+								</div>
+								<div class="card-employer__about">At Spotify, we're focused on providing the right music for every moment. We've connected millions of people to their favorite songs and created a service that people use to discover and share music they love.</div>
+								<div class="card-employer__vacancy vacancy-employer">
+									<span class="vacancy-employer__label">5 job openings.</span>
+									<a href="#" class="vacancy-employer__link">
+										<span>Apply Now</span>
+										<div class="vacancy-employer__svg">
+											<svg width="8" height="14" viewBox="0 0 8 14" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.41421 0L7.41421 6C7.7747 6.36048 7.80243 6.92772 7.4974 7.32001L7.41421 7.41421L1.41421 13.4142L0 12L5.29211 6.70711L0 1.41421L1.41421 0Z" />
+											</svg>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="body-daily__item card-jobs">
+								<div class="card-jobs__info info-card-jobs">
+									<a href="#" class="info-card-jobs__logo">
+										<img src="img/logo/microsoft.svg" alt="Microsoft">
+									</a>
+									<a href="#" class="info-card-jobs__company">Microsoft</a>
+									<div class="info-card-jobs__days">3 days ago</div>
+								</div>
+								<a href="#" class="card-jobs__vacancy">G Suite Specialist, Google Cloud Customer Engineering</a>
+								<div class="card-jobs__conditions conditions-card">
+									<div class="conditions-card__item conditions-card__item_city">Atlanta,GA</div>
+									<div class="conditions-card__item conditions-card__item_time">Fulltime</div>
+								</div>
+							</div>
+							<div class="body-daily__item card-jobs">
+								<div class="card-jobs__info info-card-jobs">
+									<a href="#" class="info-card-jobs__logo">
+										<img src="img/logo/airnbnb.svg" alt="Airbnb">
+									</a>
+									<a href="#" class="info-card-jobs__company">Airbnb</a>
+									<div class="info-card-jobs__days">3 days ago</div>
+								</div>
+								<a href="#" class="card-jobs__vacancy">Brand Marketing Manager – Services Portfolio</a>
+								<div class="card-jobs__conditions conditions-card">
+									<div class="conditions-card__item conditions-card__item_city">Aurora, CO</div>
+									<div class="conditions-card__item conditions-card__item_time">Fulltime</div>
+								</div>
+							</div>
+							<div class="body-daily__item card-jobs">
+								<div class="card-jobs__info info-card-jobs">
+									<a href="#" class="info-card-jobs__logo">
+										<img src="img/logo/ebay.svg" alt="Ebay">
+									</a>
+									<a href="#" class="info-card-jobs__company">Ebay</a>
+									<div class="info-card-jobs__days">3 days ago</div>
+								</div>
+								<a href="#" class="card-jobs__vacancy">Sales Engineer, Application Modernization, Healthcare, Google Cloud</a>
+								<div class="card-jobs__conditions conditions-card">
+									<div class="conditions-card__item conditions-card__item_city">Austin TX</div>
+									<div class="conditions-card__item conditions-card__item_time">Fulltime</div>
+								</div>
+							</div>
+							<div class="body-daily__item item-daily show-more">
+								<div class="show-more__counter">+148</div>
+								<div class="show-more__body">
+									<span class="show-more__label">Daily jobs:</span>
+									<a href="#" class="show-more__link">
+										<span>Explore more</span>
+										<div class="show-more__svg">
+											<svg width="8" height="14" viewBox="0 0 8 14" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.41421 0L7.41421 6C7.7747 6.36048 7.80243 6.92772 7.4974 7.32001L7.41421 7.41421L1.41421 13.4142L0 12L5.29211 6.70711L0 1.41421L1.41421 0Z" />
+											</svg>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="page__bg">
+				<section class="page__review review">
+					<div class="review__container">
+						<div class="review__content">
+							<div class="review__slider slider-review swiper">
+								<div class="slider-review__wrapper swiper-wrapper">
+									<div class="slider-review__slide slide-review slide-review_1 swiper-slide">
+										<div class="slide-review__img">
+											<picture><source srcset="img/review/01.webp" type="image/webp"><img src="img/review/01.jpg" alt=""></picture>
+										</div>
+										<div class="slider-review__body body-slider-review">
+											<div class="body-slider-review__svg">
+												<img src="img/review/quotes.svg" alt="">
+											</div>
+											<div class="body-slider-review__wrapper">
+												<div class="body-slider-review__text">Moving to a new place is scary, but using Oval to find a job within one week of moving in has been such a blessing to me and my family!</div>
+												<div class="body-slider-review__data">
+													<span class="body-slider-review__name">James Lyons,</span>
+													<span class="body-slider-review__workarea">Finance</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slider-review__slide slide-review slide-review_2 swiper-slide">
+										<div class="slide-review__img">
+											<picture><source srcset="img/main/header-image-4.webp" type="image/webp"><img src="img/main/header-image-4.jpg" alt=""></picture>
+										</div>
+										<div class="slider-review__body body-slider-review">
+											<div class="body-slider-review__svg">
+												<img src="img/review/quotes.svg" alt="">
+											</div>
+											<div class="body-slider-review__wrapper">
+												<div class="body-slider-review__text">Moving to a new place is scary, but using Oval to find a job within one week of moving in has been such a blessing to me and my family!</div>
+												<div class="body-slider-review__data">
+													<span class="body-slider-review__name">James Lyons,</span>
+													<span class="body-slider-review__workarea">Finance</span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<button type="button" class="swiper-button-prev"></button>
+								<button type="button" class="swiper-button-next"></button>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+			</div>
+			</section>
+			<section class="page__partners partners">
+				<div class="partners__container">
+					<div class="partners__content">
+						<h2 class="partners__title title_medium">Companies we’ve helped to hire the best candidate</h2>
+						<div class="partners__body">
+							<div class="partners__image">
+								<picture><source srcset="img/partners/01.webp" type="image/webp"><img src="img/partners/01.jpg" alt=""></picture>
+							</div>
+							<div class="partners__item">
+								<div class="partners__subtitle">We have end-to-end solutions that can keep up with you and your standards.</div>
+								<a href="#" class="partners__link">Post a Job</a>
+							</div>
+						</div>
+						<div class="partners__slider swiper">
+							<div class="partners__wrapper swiper-wrapper">
+								<div class="partners__slide slide-partners swiper-slide">
+									<a href="#" class="slide-partners__logo">
+										<picture><source srcset="img/partners/uber.webp" type="image/webp"><img src="img/partners/uber.png" alt=""></picture>
+									</a>
+									<div class="slide-partners__description">We have end-to-end solutions that can keep up with you and your standards.</div>
+								</div>
+								<div class="partners__slide slide-partners swiper-slide">
+									<a href="#" class="slide-partners__logo">
+										<picture><source srcset="img/partners/shopify.webp" type="image/webp"><img src="img/partners/shopify.png" alt=""></picture>
+									</a>
+									<div class="slide-partners__description">We have end-to-end solutions that can keep up with you and your standards.</div>
+								</div>
+								<div class="partners__slide slide-partners swiper-slide">
+									<a href="#" class="slide-partners__logo">
+										<img src="img/partners/airbnb.svg" alt="">
+									</a>
+									<div class="slide-partners__description">We have end-to-end solutions that can keep up with you and your standards.</div>
+								</div>
+
+
+								<div class="partners__slide slide-partners swiper-slide">
+									<a href="#" class="slide-partners__logo">
+										<picture><source srcset="img/partners/uber.webp" type="image/webp"><img src="img/partners/uber.png" alt=""></picture>
+									</a>
+									<div class="slide-partners__description">We have end-to-end solutions that can keep up with you and your standards.</div>
+								</div>
+								<div class="partners__slide slide-partners swiper-slide">
+									<a href="#" class="slide-partners__logo">
+										<picture><source srcset="img/partners/shopify.webp" type="image/webp"><img src="img/partners/shopify.png" alt=""></picture>
+									</a>
+									<div class="slide-partners__description">We have end-to-end solutions that can keep up with you and your standards.</div>
+								</div>
+								<div class="partners__slide slide-partners swiper-slide">
+									<a href="#" class="slide-partners__logo">
+										<img src="img/partners/airbnb.svg" alt="">
+									</a>
+									<div class="slide-partners__description">We have end-to-end solutions that can keep up with you and your standards.</div>
+								</div>
+							</div>
+						</div>
+						<div class="partners__company company-partners">
+							<div class="company-partners__items">
+								<a href="#" class="company-partners__item">
+									<img src="img/partners/microsoft.svg" alt="microsoft">
+								</a>
+								<a href="#" class="company-partners__item">
+									<picture><source srcset="img/partners/google.webp" type="image/webp"><img src="img/partners/google.png" alt="google"></picture>
+								</a>
+								<a href="#" class="company-partners__item">
+									<img src="img/partners/ge.svg" alt="GE">
+								</a>
+								<a href="#" class="company-partners__item">
+									<img src="img/partners/automatic.svg" alt="automatic">
+								</a>
+								<a href="#" class="company-partners__item">
+									<picture><source srcset="img/partners/philips.webp" type="image/webp"><img src="img/partners/philips.png" alt="philips"></picture>
+								</a>
+								<a href="#" class="company-partners__item">
+									<picture><source srcset="img/partners/intel.webp" type="image/webp"><img src="img/partners/intel.png" alt="intel"></picture>
+								</a>
+							</div>
+							<div class="company-partners__label">Some of the many companies that rely on Oval for hiring.</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<section class="page__discover discover">
+				<div class="discover__container">
+					<div class="discover__content">
+						<div class="discover__form">
+							<form action="" class="select discover-select">
+								<label class="select__label">You’re now discovering</label>
+								<div class="select__2">
+									<label class="select__label">jobs from </label>
+									<select class="select__choice" name="form[]" data-class-modif="form">
+										<option value="1" selected>Indonesia</option>
+										<option value="2">Ukraine</option>
+										<option value="3">Poland</option>
+										<option value="4">England</option>
+									</select>
+
+								</div>
+							</form>
+						</div>
+						<a href="#" class="discover__button button__orange">
+							<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M19 10C19 5.02944 14.9706 1 10 1C5.02944 1 1 5.02944 1 10C1 14.9706 5.02944 19 10 19C12.1248 19 14.0776 18.2637 15.6172 17.0323L21.2929 22.7071L22.7071 21.2929L17.0323 15.6172C18.2637 14.0776 19 12.1248 19 10ZM3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10Z" />
+							</svg>
+							<span>Find Job Now</span>
+						</a>
+					</div>
+				</div>
+			</section>
+	</div>
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__content">
+				<div class="footer__top top-footer">
+					<div class="top-footer__left">
+						<a href="#" class="top-footer__logo">
+							<img src="img/footer/oval-orange.svg" alt="Oval">
+						</a>
+						<p>&#169; 2019 Oval</p>
+					</div>
+					<div class="top-footer__right">
+						<div class="top-footer__column column-top-footer">
+							<div class="column-top-footer__title">For Job Seekers</div>
+							<ul class="column-top-footer__list">
+								<li><a href="#" class="column-top-footer__link">Search Jobs</a></li>
+								<li><a href="#" class="column-top-footer__link">Browse Jobs</a></li>
+								<li><a href="#" class="column-top-footer__link">Salaries</a></li>
+								<li><a href="#" class="column-top-footer__link">Job Seeker Reviews</a></li>
+								<li><a href="#" class="column-top-footer__link">Mobile Apps</a></li>
+								<li><a href="#" class="column-top-footer__link">Create Free Account</a></li>
+								<li><a href="#" class="column-top-footer__link">Job Seeker Support</a></li>
+								<li><a href="#" class="column-top-footer__link">Trust and Safety</a></li>
+							</ul>
+						</div>
+						<div class="top-footer__column column-top-footer">
+							<div class="column-top-footer__title">For Employers</div>
+							<ul class="column-top-footer__list">
+								<li><a href="#" class="column-top-footer__link">Post a Job Now</a></li>
+								<li><a href="#" class="column-top-footer__link">How it Works</a></li>
+								<li><a href="#" class="column-top-footer__link">Job Sites</a></li>
+								<li><a href="#" class="column-top-footer__link">Oval Reviews</a></li>
+								<li><a href="price.html" class="column-top-footer__link">Plans</a></li>
+								<li><a href="#" class="column-top-footer__link">Enterprise</a></li>
+								<li><a href="#" class="column-top-footer__link">Search Resumes</a></li>
+								<li><a href="#" class="column-top-footer__link">New Account Help</a></li>
+								<li><a href="#" class="column-top-footer__link">Employer Support</a></li>
+							</ul>
+						</div>
+						<div class="top-footer__column column-top-footer">
+							<div class="column-top-footer__title">Industry Solutions</div>
+							<ul class="column-top-footer__list">
+								<li><a href="#" class="column-top-footer__link">Accounting</a></li>
+								<li><a href="#" class="column-top-footer__link">Construction</a></li>
+								<li><a href="#" class="column-top-footer__link">Healthcare</a></li>
+								<li><a href="#" class="column-top-footer__link">Legal</a></li>
+								<li><a href="#" class="column-top-footer__link">Sales</a></li>
+								<li><a href="#" class="column-top-footer__link">Technology</a></li>
+							</ul>
+						</div>
+						<div class="top-footer__column column-top-footer">
+							<div class="column-top-footer__title">Partner with Us</div>
+							<ul class="column-top-footer__list">
+								<li><a href="#" class="column-top-footer__link">Overview</a></li>
+								<li><a href="#" class="column-top-footer__link">Job Board API</a></li>
+								<li><a href="#" class="column-top-footer__link">Email Alert Program</a></li>
+								<li><a href="#" class="column-top-footer__link">Reseller Program</a></li>
+								<li><a href="#" class="column-top-footer__link">Job Board Software</a></li>
+								<li><a href="#" class="column-top-footer__link">ATS Integrations</a></li>
+								<li><a href="#" class="column-top-footer__link">Newspaper Partnerships</a></li>
+							</ul>
+						</div>
+						<div class="top-footer__column column-top-footer">
+							<div class="column-top-footer__title">Company</div>
+							<ul class="column-top-footer__list">
+								<li><a href="#" class="column-top-footer__link">About Us</a></li>
+								<li><a href="#" class="column-top-footer__link">Careers</a></li>
+								<li><a href="#" class="column-top-footer__link">Blog</a></li>
+								<li><a href="#" class="column-top-footer__link">Press</a></li>
+								<li><a href="#" class="column-top-footer__link">Oval.org</a></li>
+								<li><a href="#" class="column-top-footer__link">Oval ID</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__line"></div>
+		<div class="footer__container">
+			<div class="footer__content">
+				<div class="footer__bottom bottom-footer">
+					<div class="bottom-footer__social social">
+						<ul class="social__list">
+							<li><a href="#" class="social__link social__link_twitter">
+									<img src="img/icons/twitter.svg" alt="twitter">
+								</a></li>
+							<li><a href="#" class="social__link social__link_facebook">
+									<img src="img/icons/facebook.svg" alt="facebook">
+								</a></li>
+							<li><a href="#" class="social__link social__link_linkedin">
+									<img src="img/icons/linkedin.svg" alt="linkedin">
+								</a></li>
+						</ul>
+					</div>
+					<div class="bottom-footer__links">
+						<ul class="bottom-footer__list">
+							<li><a href="#" class="bottom-footer__link">Terms of Service</a></li>
+							<li><a href="#" class="bottom-footer__link">Privacy Policy</a></li>
+							<li><a href="#" class="bottom-footer__link">Trust & Safety</a></li>
+						</ul>
+					</div>
+					<div class="bottom-footer__language language">
+						<span>Language :</span>
+						<button class="language__button">
+							<span class="language__choice">EN</span>
+							<svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M11.9805 0.333344L6.3236 5.9902L0.666748 0.333344H11.9805Z" fill="#B3B1B7" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230412152255"></script>
+</body>
+
+</html>

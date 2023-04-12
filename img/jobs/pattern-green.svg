@@ -1,0 +1,20 @@
+<svg width="721" height="241" viewBox="0 0 721 241" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.24">
+<mask id="mask0_0_7193" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="136" y="-279" width="653" height="653">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M231.63 278.37C104.123 150.864 104.123 -55.8642 231.63 -183.37C359.136 -310.877 565.864 -310.877 693.37 -183.37C820.877 -55.8642 820.877 150.864 693.37 278.37C565.864 405.877 359.136 405.877 231.63 278.37Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_0_7193)">
+<path d="M651.109 415.385V-286.522" stroke="#576867" stroke-width="2" stroke-dasharray="40 40"/>
+<path d="M542.255 415.385V-286.522" stroke="#576867" stroke-width="2" stroke-dasharray="40 40"/>
+<path d="M433.401 415.385V-286.522" stroke="#576867" stroke-width="2" stroke-dasharray="40 40"/>
+<path d="M324.547 415.385V-286.522" stroke="#576867" stroke-width="2" stroke-dasharray="40 40"/>
+<path d="M216.333 414.745V-287.162" stroke="#576867" stroke-width="2" stroke-dasharray="40 40"/>
+<path opacity="0.25" d="M705.536 437.8V-264.107" stroke="#576867" stroke-width="2" stroke-dasharray="40 40"/>
+<path opacity="0.25" d="M596.682 394.251V-307.656" stroke="#576867" stroke-width="2" stroke-dasharray="40 40"/>
+<path opacity="0.25" d="M487.828 437.8V-264.107" stroke="#576867" stroke-width="2" stroke-dasharray="40 40"/>
+<path opacity="0.25" d="M379.614 394.892V-307.015" stroke="#576867" stroke-width="2" stroke-dasharray="40 40"/>
+<path opacity="0.25" d="M270.76 438.44V-263.467" stroke="#576867" stroke-width="2" stroke-dasharray="40 40"/>
+<path opacity="0.25" d="M161.906 394.892V-307.015" stroke="#576867" stroke-width="2" stroke-dasharray="40 40"/>
+</g>
+</g>
+</svg>
